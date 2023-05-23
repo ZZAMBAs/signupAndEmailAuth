@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/signup
+    username: root
+    password: 1234
+  sql:
+    init:
+      mode: always
+
+auth:
+  mail:
+    host: smtp.naver.com
+    id: # 네이버 이메일
+    password: # 네이버 비밀번호
+  server:
+    baseUrl: http://localhost:8080
+  jwt:
+    signingKey: ymLTU8rq83j4fmJZj60wh4OrMNuntIj4fmJ # JWT signingKey
